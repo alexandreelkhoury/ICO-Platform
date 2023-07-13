@@ -1,12 +1,12 @@
-name: check-node-version
-run-name: check-node-version
+name: upload-to-dockerhub
+run-name: upload-to-dockerhub
 on:
   push : 
     branches:
       - 'master'
 jobs:
-  check-node-version:
+  upload-to-dockerhub:
     runs-on: ubuntu-latest
     steps:
-      - run: docker build -t alexkhoury/frontend-ico frontend
+      - run: docker build -t alexkhoury/frontend-ico ../frontend
       - run: docker push alexkhoury/frontend-ico
