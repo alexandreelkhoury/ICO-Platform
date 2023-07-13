@@ -1,11 +1,11 @@
-name: Builder
-run-name: Action = run npm build
+name: check-node-version
+run-name: check-node-version
 on:
   push : 
     branches:
       - 'master'
 jobs:
-  run-npm-build:
+  check-node-version:
     runs-on: ubuntu-latest
     steps:
-      - run: npm run build
+      - run: node -v
