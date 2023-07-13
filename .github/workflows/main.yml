@@ -1,4 +1,4 @@
-name: upload-to-dockerhub
+name: upload-to-dockerhubb
 run-name: upload-to-dockerhub
 on:
   push : 
