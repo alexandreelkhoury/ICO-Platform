@@ -68,7 +68,7 @@ contract MyToken {
     function setTotalSupply(uint256 totalAmount) internal {
         _totalSupply = totalAmount;
     }
-
+    
     function balanceOf(address account) public view returns (uint256) {
         return _balances[account];
     }

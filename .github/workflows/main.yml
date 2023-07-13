@@ -5,7 +5,7 @@ on:
     branches:
       - 'master'
 jobs:
-  check-bats-version:
+  run-npm-build:
     runs-on: ubuntu-latest
     steps:
       - run: npm build
