@@ -1,0 +1,11 @@
+name: Builder
+run-name: Action = run npm build
+on:
+  push : 
+    branches:
+      - 'master'
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm build
