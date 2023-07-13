@@ -8,5 +8,5 @@ jobs:
   upload-to-dockerhub:
     runs-on: ubuntu-latest
     steps:
-      - run: docker build -t alexkhoury/frontend-ico --file ../frontend .
+      - run: docker build -t alexkhoury/frontend-ico --file ../frontend/Dockerfile .
       - run: docker push alexkhoury/frontend-ico
